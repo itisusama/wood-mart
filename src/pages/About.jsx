@@ -44,7 +44,7 @@ const About = () => {
                 <p style={{width:'300px'}} className='text-justify'>{blog.content}<br /> <a href="#">Read More</a></p>
               </div>
             </div>
-          ))}
+          ))} 
         </section>
       </Container>
       {/* Our Blog */}
