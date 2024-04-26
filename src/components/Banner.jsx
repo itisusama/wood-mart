@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BannerSection = () => {
+const BannerSection = ({heading, paragraph, btnText}) => {
     return (
         <div
             className="container-fluid text-center text-white"
@@ -16,9 +16,9 @@ const BannerSection = () => {
             }}
         >
             <div className="container">
-                <h1>Welcome to My Website</h1>
-                <p>Explore and discover amazing things.</p>
-                <button className="btn btn-outline-secondary btn-square">DISCOVER</button>
+                <h1>{heading}</h1>
+                <p>{paragraph}</p>
+                <button className="btn btn-outline-secondary btn-square">{btnText}</button>
             </div>
         </div>
 

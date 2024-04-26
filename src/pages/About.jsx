@@ -48,7 +48,7 @@ const About = () => {
         </section>
       </Container>
       {/* Our Blog */}
-      <BannerSection/>
+      <BannerSection heading="something heading goes here" paragraph="Something paragraph goes here"/>
     </>
   )
 }
