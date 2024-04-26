@@ -1,68 +1,204 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media (max-width:980px){
+  body, html{
+    overflow-x: hidden;
+  }
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* START: Navbar */
+.nav-container{
+  position: absolute !important;
+  z-index: 99; 
 }
-a:hover {
-  color: #535bf2;
-}
+.bg-transparent{
+  background-color: rgba(255, 0, 0, 0) !important;
+  color: white;
 
-body {
-  margin: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-evenly;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.bars{
+  color: black;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.5rem;
+  right: 1rem;
+  z-index: 99;
+  display: none;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.mobile-navbar{
+  display: none;
+}
+
+@media (max-width: 610px){
+  .desktop-navbar-item{
+    display: none;
+  }
+
+  .bars, .mobile-navbar{
+    display: block;
+  }
+  .logo{
+    color: black !important;
+  }
+  .nav-container{
+    background-color: white;
+    margin-top: -3px !important;
+  }
+
+  .bg-transparent{
+    color: black !important;
+  }
+
+  .mobile-navbar{
+    position: absolute;
+    top: 2.5rem;
+    z-index: 99;
+    background-color: white;
+  }
+}
+
+/* END: Navbar */
+
+/* Dual Image CSS */
+.image-container {
+  position: relative;
+}
+.img2{
+  margin-left: 30px;
+  margin-top: 5rem;
+}
+
+.floating-image1 {
+  position: absolute;
+  animation: floatAnimation 5s ease-in-out infinite;
+}
+.floating-image2 {
+  position: absolute;
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* START: Progress Bars */
+.experience-section{
+  padding : 55px 0 100px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position:relative
+  
+}
+
+.experience-section .experience-items{
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+.experience-item{
+  -webkit-box-flex: 0;
+  -ms-flex : 0 0 48%;
+  flex: 0 0 48%;
+  max-width: 48%;
+}
+.experience-info{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.experience-info p{
+  font-size: 50px;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  font-size: 22px;
+  line-height: 1.5s;
+  color: #15295f;
+  -webkit-animation: showText 0.5s 1s linear forwards;
+  animation: showText 0.5s 1s linear forwards;
 }
-button:hover {
-  border-color: #646cff;
+.progress-line{
+  margin-top: 7px;
+  height: 10px;
+  width: 100%;
+  background-color: #cdcdcd;
+  border-radius: 50px;
+  position: relative;
+ 
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.progress-line span{
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left;
+  transform-origin: left;
+  -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  height: 100%;
+  border-radius: 50px;
+  position: absolute;
+  background-color: #fd6e0a;
+  transition: 1s all;
+ 
+}
+.progress-line span.animate{
+  -webkit-animation:animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards; 
+  animation:animate 1.5s 0.5s cubic-bezier(1, 0, 0.5, 1) forwards; 
+}
+@-webkit-keyframes showText{
+100%{
+  opacity: 1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+}
+@keyframes showText{
+100%{
+  opacity: 1;
+}
+
+}
+@-webkit-keyframes animate{
+  100%{
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
   }
-  a:hover {
-    color: #747bff;
+  
   }
-  button {
-    background-color: #f9f9f9;
+@keyframes animate{
+100%{
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+}
+
+@media (max-width: 767px){
+  .experience-item{
+    -webkit-box-flex: 0;
+    -ms-flex : 0 0 48%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
+}
+/* END: Progress Bars */
+
+.linkStyle{
+  text-decoration: none;
+  color: inherit;
 }
