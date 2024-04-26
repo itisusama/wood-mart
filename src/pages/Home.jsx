@@ -15,7 +15,7 @@ const Home = () => {
         <DualImageDisplay/>
         <DualBanners/>
         <TextandImage/>
-        <BannerSection/>
+        <BannerSection heading="Welcome to My Website" paragraph="Explore and discover amazing things." btnText="Discover"/>
         <ProgressBarSect/>
     </Fragment>
   );
