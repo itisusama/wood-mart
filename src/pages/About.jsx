@@ -1,7 +1,8 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import { Container } from 'react-bootstrap';
-import BannerSection from '../components/Banner';
+import SalesBanner from '../components/SalesBanner';
+import imgOne from '../assets/images/img6.jpg';
 
 const About = () => {
 
@@ -48,7 +49,18 @@ const About = () => {
         </section>
       </Container>
       {/* Our Blog */}
-      <BannerSection heading="something heading goes here" paragraph="Something paragraph goes here"/>
+      <Container className='my-3'>
+        <div className="row">
+            <div className='col-md-6'>
+              <img src={imgOne} alt="one" className='img-fluid rounded' style={{width:'90%'}}/>
+            </div>
+            <div className='col-md-6'>
+              <h1>Heading goes here</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, obcaecati facilis asperiores, dolore sint pariatur veritatis dolor nam doloribus culpa eius quo voluptatibus cumque quae possimus doloremque illo officia ratione eligendi, unde odio! Similique nisi provident commodi, quam beatae sunt optio excepturi doloribus reprehenderit molestiae, hic explicabo deleniti. Id quos illum officiis tempora a accusantium nihil sed ab asperiores impedit, aspernatur magni. Corrupti necessitatibus dolores quod ad sint sunt maxime nulla nisi natus, perspiciatis facere sequi tempore impedit distinctio!</p>
+            </div>
+        </div>
+      </Container>
+      <SalesBanner/>
     </>
   )
 }
