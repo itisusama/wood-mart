@@ -3,6 +3,7 @@ import BreadCrumb from '../components/BreadCrumb';
 import { Container } from 'react-bootstrap';
 import SalesBanner from '../components/SalesBanner';
 import imgOne from '../assets/images/img6.jpg';
+import Newsletter from '../components/Newsletter';
 
 const About = () => {
 
@@ -61,6 +62,7 @@ const About = () => {
         </div>
       </Container>
       <SalesBanner/>
+      <Newsletter/>
     </>
   )
 }
