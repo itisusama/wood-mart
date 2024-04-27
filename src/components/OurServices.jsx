@@ -21,19 +21,19 @@ const OurServices = () => {
             </Col>
             <Col md={3} className='d-flex flex-column justify-content-center align-items-center p-3'>
                 <img src={iconTwo} alt="icone" />
-                <h3>Furniture</h3>
+                <h3>Office</h3>
                 <p className='text-center'>There are many variations of passages of Lorem Ipsum available, but the</p>
                 <button type='button' className='btn btn-primary'>Shop Now</button>
             </Col>
             <Col md={3} className='d-flex flex-column justify-content-center align-items-center p-3'>
                 <img src={iconThree} alt="icone" />
-                <h3>Furniture</h3>
+                <h3>Home</h3>
                 <p className='text-center'>There are many variations of passages of Lorem Ipsum available, but the</p>
                 <button type='button' className='btn btn-primary'>Shop Now</button>
             </Col>
             <Col md={3} className='d-flex flex-column justify-content-center align-items-center p-3'>
                 <img src={iconFour} alt="icone" />
-                <h3>Furniture</h3>
+                <h3>Bedroom</h3>
                 <p className='text-center'>There are many variations of passages of Lorem Ipsum available, but the</p>
                 <button type='button' className='btn btn-primary'>Shop Now</button>
             </Col>
