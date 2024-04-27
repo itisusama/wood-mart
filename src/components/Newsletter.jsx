@@ -5,10 +5,10 @@ const Newsletter = () => {
   return (
     <>
       <div class="intro-header my-3">
-        <div class="testimonial-container" align="center">
+        <div class="newsletter-container" align="center">
           <div class="tab-content custom-tab-content" align="center">
             <div class="subscribe-panel">
-              <h1>Newsletter!!!</h1>
+              <h2>Newsletter!!!</h2>
               <p>Subscribe to our weekly Newsletter and stay tuned.</p>
 
               <form action="" method="post">

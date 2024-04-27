@@ -50,7 +50,7 @@ const Contact = () => {
                 <textarea className="form-control" style={{fontStyle:'italic'}} id="comments" rows="7" placeholder="Comments" defaultValue={""}></textarea>
               </div>
               <div className="text-right">
-                <button type="button" style={{ backgroundColor: '#80bfb3', outline: 'none' }} className="btn btn-primary ml-auto">Submit</button>
+                <button type="btn" className="btn btn-primary ml-auto">Submit</button>
               </div>
             </form>
           </div>
