@@ -5,6 +5,7 @@ import DualBanners from '../components/DualBanners';
 import TextandImage from '../components/TextandImage';
 import SalesBanner from '../components/SalesBanner';
 import ProgressBarSect from "../components/ProgressBarSect";
+import CarouselandImage from "../components/CarouselandImage";
 import Newsletter from "../components/Newsletter";
 
 
@@ -14,9 +15,10 @@ const Home = () => {
     <Fragment>
         <CarouselPage/>
         <DualImageDisplay/>
-        <DualBanners/>
-        <TextandImage/>
         <SalesBanner/>
+        <TextandImage/>
+        <DualBanners/>
+        <CarouselandImage/>
         <ProgressBarSect/>
         <Newsletter/>
     </Fragment>

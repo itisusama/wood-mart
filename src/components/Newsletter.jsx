@@ -29,7 +29,7 @@ const Newsletter = () => {
                 </div>
                 <div class="col-md-4"></div>
                 <br />
-                <button class="btn btn-secondary btn-lg">Subscribe Now!</button>
+                <button class="btn btn-primary btn-lg">Subscribe Now!</button>
               </form>
             </div>
           </div>

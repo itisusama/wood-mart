@@ -18,7 +18,7 @@ const BannerSection = ({heading, paragraph, btnText}) => {
             <div className="container">
                 <h1>{heading}</h1>
                 <p>{paragraph}</p>
-                <button className="btn btn-outline-secondary btn-square">{btnText}</button>
+                <button className="btn btn-primary">{btnText}</button>
             </div>
         </div>
 
