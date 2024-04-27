@@ -1,9 +1,10 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import { Container } from 'react-bootstrap';
-import SalesBanner from '../components/SalesBanner';
+import BannerSection from '../components/Banner';
 import imgOne from '../assets/images/img6.jpg';
 import Newsletter from '../components/Newsletter';
+import CustomerTestimonials from '../components/CustomerTestimonials';
 
 const About = () => {
 
@@ -61,7 +62,8 @@ const About = () => {
             </div>
         </div>
       </Container>
-      <SalesBanner/>
+      <BannerSection heading="Welcome to Site Name" paragraph="Explore and discover amazing things." btnText="Discover"/>
+      <CustomerTestimonials/>
       <Newsletter/>
     </>
   )

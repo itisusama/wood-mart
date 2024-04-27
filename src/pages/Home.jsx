@@ -3,8 +3,9 @@ import CarouselPage from "../components/CarouselPage";
 import DualImageDisplay from "../components/DualImageDisplay";
 import DualBanners from '../components/DualBanners';
 import TextandImage from '../components/TextandImage';
-import BannerSection from '../components/Banner';
+import SalesBanner from '../components/SalesBanner';
 import ProgressBarSect from "../components/ProgressBarSect";
+import Newsletter from "../components/Newsletter";
 
 
 const Home = () => {
@@ -15,8 +16,9 @@ const Home = () => {
         <DualImageDisplay/>
         <DualBanners/>
         <TextandImage/>
-        <BannerSection heading="Welcome to My Website" paragraph="Explore and discover amazing things." btnText="Discover"/>
+        <SalesBanner/>
         <ProgressBarSect/>
+        <Newsletter/>
     </Fragment>
   );
 };

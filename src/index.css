@@ -202,3 +202,19 @@
   text-decoration: none;
   color: inherit;
 }
+
+/* Newsletter */
+.intro-header {
+	color: #f8f8f8;
+	text-align: center;
+}
+
+.testimonial-container{
+background-color:#00bfff;
+width:100%;
+padding: 20px 0;
+}
+.custom-tab-content{
+color:#fff;
+font-family: 'Open Sans', sans-serif;
+}

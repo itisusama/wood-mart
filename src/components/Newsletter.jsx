@@ -5,7 +5,7 @@ const Newsletter = () => {
   return (
     <>
       <div class="intro-header my-3">
-        <div class="container" align="center">
+        <div class="testimonial-container" align="center">
           <div class="tab-content custom-tab-content" align="center">
             <div class="subscribe-panel">
               <h1>Newsletter!!!</h1>
