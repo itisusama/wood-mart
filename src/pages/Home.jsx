@@ -7,6 +7,7 @@ import SalesBanner from '../components/SalesBanner';
 import ProgressBarSect from "../components/ProgressBarSect";
 import CarouselandImage from "../components/CarouselandImage";
 import Newsletter from "../components/Newsletter";
+import OurServices from "../components/OurServices";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <CarouselPage/>
         <DualImageDisplay/>
         <SalesBanner/>
+        <OurServices/>
         <TextandImage/>
         <DualBanners/>
         <CarouselandImage/>
