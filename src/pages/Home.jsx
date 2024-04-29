@@ -3,9 +3,12 @@ import CarouselPage from "../components/CarouselPage";
 import DualImageDisplay from "../components/DualImageDisplay";
 import DualBanners from '../components/DualBanners';
 import TextandImage from '../components/TextandImage';
-import BannerSection from '../components/Banner';
+import SalesBanner from '../components/SalesBanner';
 import ProgressBarSect from "../components/ProgressBarSect";
 import CarouselandImage from "../components/CarouselandImage";
+import Newsletter from "../components/Newsletter";
+import OurServices from "../components/OurServices";
+
 
 const Home = () => {
 
@@ -13,11 +16,13 @@ const Home = () => {
     <Fragment>
         <CarouselPage/>
         <DualImageDisplay/>
-        <DualBanners/>
+        <SalesBanner/>
+        <OurServices/>
         <TextandImage/>
-        <BannerSection heading="Welcome to My Website" paragraph="Explore and discover amazing things." btnText="Discover"/>
+        <DualBanners/>
         <CarouselandImage/>
         <ProgressBarSect/>
+        <Newsletter/>
     </Fragment>
   );
 };

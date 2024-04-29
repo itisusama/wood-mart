@@ -11,7 +11,7 @@ const DualImageDisplay = () => {
             <h2 className="heading text-uppercase fw-normal" style={{ fontSize: '50px' }}>SHADES OF <br /> <span className="fw-bold">ELEGANCE</span></h2>
             <p className='fs-4'>Lorem ipsum dolor sit amet, consectetur ad is cing elit, semdo eiusmod tempor est.
             </p>
-            <button className="btn btn-outline-secondary btn-square" style={{backgroundColor:'#9db97b'}}>Click ME</button>
+            <Button>Click Me</Button>
           </div>
         </Col>
         <Col lg={6} data-aos='fade-left'>

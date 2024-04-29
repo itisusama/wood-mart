@@ -1,7 +1,7 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import img1 from '../assets/images/img1.jpg';
+// import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+// import img1 from '../assets/images/img1.jpg';
 
 const Contact = () => {
   return (
@@ -50,7 +50,7 @@ const Contact = () => {
                 <textarea className="form-control" style={{fontStyle:'italic'}} id="comments" rows="7" placeholder="Comments" defaultValue={""}></textarea>
               </div>
               <div className="text-right">
-                <button type="button" style={{ backgroundColor: '#80bfb3', outline: 'none' }} className="btn btn-primary ml-auto">Submit</button>
+                <button type="btn" className="btn btn-primary ml-auto">Submit</button>
               </div>
             </form>
           </div>
