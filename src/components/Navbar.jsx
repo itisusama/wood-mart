@@ -25,7 +25,7 @@ const Navbar = () => {
                             </Dropdown.Toggle>
 
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#/action-1">All Products</Dropdown.Item>
+                                <Link to='/allproducts'><Dropdown.Item>All Products</Dropdown.Item></Link>
                                 <Dropdown.Item href="#/action-2">Single Products</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>

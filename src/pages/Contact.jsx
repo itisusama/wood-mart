@@ -1,7 +1,7 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import img1 from '../assets/images/img1.jpg';
+// import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+// import img1 from '../assets/images/img1.jpg';
 
 const Contact = () => {
   return (

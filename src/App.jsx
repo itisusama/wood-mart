@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import AllProducts from './pages/AllProducts';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
+        <Route path="/allproducts" element={<AllProducts/>} />
       </Routes>
       <Footer/>
     </Router>
