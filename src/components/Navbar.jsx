@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import AllProducts from '../pages/AllProducts';
 
 const Navbar = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -26,12 +25,8 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Link to="/allproducts">
-                                            <Dropdown.Item>All Products</Dropdown.Item>
-                                        </Link>
-                                        <Link to="/single-products">
-                                            <Dropdown.Item>Single Products</Dropdown.Item>
-                                        </Link>
+                                            <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>All Products</Link> </Dropdown.Item>
+                                            <Dropdown.Item><Link to="/single-product" className='linkStyle'>Single Product</Link></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>

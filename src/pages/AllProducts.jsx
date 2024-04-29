@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Carousel } from 'react-bootstrap';
 import BreadCrumb from '../components/BreadCrumb';
+import Newsletter from '../components/Newsletter';
+import ProductCards from '../components/ProductCards';
 
 
 const AllProductsSection = () => {
@@ -46,26 +48,10 @@ const AllProductsSection = () => {
           ))}
         </Row>
 
-        <Carousel interval={3000} indicators={false} controls={false} pause={false} wrap={true} slide={true}>
-            {[...Array(Math.ceil(items.length / 4))].map((_, index) => (
-                <Carousel.Item key={index}>
-                    <div className="d-flex justify-content-around align-items-center gap-2 mt-5">
-                        {items.slice(index * 4, index * 4 + 4).map(item => (
-                            <div key={item.id} className="text-center">
-                                <img src={item.image} alt={item.name} style={{ width: '250px', height: '300px' }} />
-                                <div>
-                                    <h3>{item.name}</h3>
-                                    <p>{item.subname}</p>
-                                    <p>Price: {item.price}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </Carousel.Item>
-            ))}
-        </Carousel>
+        <ProductCards/>
 
       </Container>
+      <Newsletter/>
     </>
   );
 }
