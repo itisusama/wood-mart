@@ -22,23 +22,19 @@ const Navbar = () => {
                             <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" className='text-white' id="dropdown-basic">
-                                        Shop
+                                        <strong>Shop</strong>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Link to="/allproducts">
-                                            <Dropdown.Item>All Products</Dropdown.Item>
-                                        </Link>
-                                        <Link to="/single-products">
-                                            <Dropdown.Item>Single Products</Dropdown.Item>
-                                        </Link>
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>All Products</Link> </Dropdown.Item>
+                                        <Dropdown.Item><Link to="/singleproduct" className='linkStyle'>Single Product</Link></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
                             <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" className='text-white' id="dropdown-basic">
-                                        Blog
+                                        <strong>Blog</strong>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
@@ -47,8 +43,8 @@ const Navbar = () => {
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
-                            <Link to="/about" className='linkStyle'>About</Link>
-                            <Link to="/contact" className='linkStyle'>Contact</Link>
+                            <Link to="/about" className='linkStyle'><strong>About</strong></Link>
+                            <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
                         </ul>
                     </div>
 
@@ -68,7 +64,7 @@ const Navbar = () => {
                             <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" id="dropdown-basic">
-                                        Shop
+                                        <strong>Shop</strong>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
@@ -80,17 +76,22 @@ const Navbar = () => {
                             <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" id="dropdown-basic">
-                                        Blog
+                                        <strong>Blog</strong>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-1">All Blogs</Dropdown.Item>
                                         <Dropdown.Item href="#/action-2">Single Blog</Dropdown.Item>
                                     </Dropdown.Menu>
+
                                 </Dropdown>
                             </li>
-                            <Link to="/about" className='linkStyle'>About</Link>
-                            <Link to="/contact" className='linkStyle'>Contact</Link>
+                            <li>
+                                
+                            </li>
+                            <Link to="/about" className='linkStyle'><strong>About</strong></Link>
+                            <br/>
+                            <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
                         </ul>
                     </div>
                 </nav>

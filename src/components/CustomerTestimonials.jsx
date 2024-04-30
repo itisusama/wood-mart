@@ -31,11 +31,11 @@ const CustomerTestimonials = () => {
 
   return (
     <Container className="customer-testimonials">
-      <h2 className="text-center">What Our Customers Say</h2>
+      <h2 className="text-center mt-5">What Our Customers Say</h2>
       <Row>
         {testimonials.map((testimonial) => (
           <Col key={testimonial.id} md={4}>
-            <Card className="testimonial-card" style={{ backgroundColor: testimonial.backgroundColor }}>
+            <Card className="testimonial-card mt-3 " style={{ backgroundColor: testimonial.backgroundColor }}>
               <Card.Body>
                 <img src={testimonial.image} alt={testimonial.author} className="testimonial-image" style={{borderRadius: '50%'}} />
                 <blockquote className="blockquote mb-0">

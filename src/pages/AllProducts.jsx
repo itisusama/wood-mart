@@ -17,10 +17,10 @@ const AllProductsSection = () => {
     { id: 2, name: 'Product 2', subname: 'Description 2', price: '$149', image: 'https://via.placeholder.com/250x300' },
     { id: 3, name: 'Product 3', subname: 'Description 3', price: '$199', image: 'https://via.placeholder.com/250x300' },
     { id: 4, name: 'Product 4', subname: 'Description 4', price: '$249', image: 'https://via.placeholder.com/250x300' },
-    { id: 4, name: 'Product 5', subname: 'Description 5', price: '$249', image: 'https://via.placeholder.com/250x300' },
-    { id: 4, name: 'Product 6', subname: 'Description 6', price: '$249', image: 'https://via.placeholder.com/250x300' },
-    { id: 4, name: 'Product 7', subname: 'Description 7', price: '$249', image: 'https://via.placeholder.com/250x300' },
-    { id: 4, name: 'Product 8', subname: 'Description 8', price: '$249', image: 'https://via.placeholder.com/250x300' },
+    { id: 5, name: 'Product 5', subname: 'Description 5', price: '$249', image: 'https://via.placeholder.com/250x300' },
+    { id: 6, name: 'Product 6', subname: 'Description 6', price: '$249', image: 'https://via.placeholder.com/250x300' },
+    { id: 7, name: 'Product 7', subname: 'Description 7', price: '$249', image: 'https://via.placeholder.com/250x300' },
+    { id: 8, name: 'Product 8', subname: 'Description 8', price: '$249', image: 'https://via.placeholder.com/250x300' },
 
 ];
 
