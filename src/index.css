@@ -14,7 +14,7 @@
 .btn-primary:hover{background-color: var(--color-secondary); outline: none; border: none;}
 
 /* START: Navbar */
-.nav-container{position: absolute !important;z-index: 99;}.bg-transparent{background-color: rgba(255, 0, 0, 0) !important;color: var(--textColorWhite);display: flex;justify-content: space-evenly;}.bars{color: var(--textColorBlack);position: absolute;font-size: 1.5rem;top: 0.5rem;right: 1rem;z-index: 99;display: none;}.mobile-navbar{display: none;}@media (max-width: 610px){.desktop-navbar-item{display: none;}.bars, .mobile-navbar{display: block;}.logo{color: var(--textColorBlack) !important;}.nav-container{background-color: var(--color-background);margin-top: -3px !important;}.bg-transparent{color: var(--textColorBlack) !important;}.mobile-navbar{position: absolute;top: 2.5rem;z-index: 99;background-color: var(--color-background);}}
+.nav-container{position: fixed !important;z-index: 99; margin-top: -10px !important;}.bg-transparent{background-color: rgba(255, 0, 0, 0) !important;color: var(--textColorWhite); margin-top:20px; display: flex;justify-content: space-evenly;}.bars{color: var(--textColorBlack);position: absolute;font-size: 1.5rem;top: 0.5rem;right: 1rem;z-index: 99;display: none;}.mobile-navbar{display: none;} @media (max-width: 610px){.desktop-navbar-item{display: none;}.bars, .mobile-navbar{display: block;}.logo{color: var(--textColorBlack) !important;}.nav-container{background-color: var(--color-background);margin-top: -3px !important;}.bg-transparent{color: var(--textColorBlack) !important;}.mobile-navbar{position: absolute;top: 2.5rem;z-index: 99;background-color: var(--color-background);}}
 /* END: Navbar */
 
 /* Dual Image CSS */

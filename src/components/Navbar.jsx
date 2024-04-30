@@ -1,18 +1,33 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import AllProducts from '../pages/AllProducts';
 
 const Navbar = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
 
     const toggleNavVisibility = () => {
         setIsNavVisible(!isNavVisible);
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrollPosition(window.scrollY);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const navContainerClasses = `container-fluid nav-container mt-2`;
+
     return (
         <>
-            <div className='container-fluid nav-container mt-2'>
+            <div className={navContainerClasses}>
                 <section className='py-1 p-2 bg-transparent'>
                     <div><h3 className='text-white logo'>Wood Mart</h3></div>
 
@@ -45,6 +60,7 @@ const Navbar = () => {
                             </li>
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
+                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
                         </ul>
                     </div>
 
@@ -92,6 +108,8 @@ const Navbar = () => {
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <br/>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
+                            <br/>
+                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
                         </ul>
                     </div>
                 </nav>

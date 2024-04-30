@@ -8,6 +8,7 @@ import ProgressBarSect from "../components/ProgressBarSect";
 import CarouselandImage from "../components/CarouselandImage";
 import Newsletter from "../components/Newsletter";
 import OurServices from "../components/OurServices";
+import ProductCards from "../components/ProductCards";
 
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         <DualBanners/>
         <CarouselandImage/>
         <ProgressBarSect/>
+        <ProductCards/>
         <Newsletter/>
     </Fragment>
   );

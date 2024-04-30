@@ -10,7 +10,7 @@ const headerStyle = {
   textAlign: 'center',
   paddingTop: '8rem',
   paddingBottom: '8rem',
-  height:'50vh'
+  height:'56vh',
 };
 
 const BreadCrumb = ({pageName}) => {
