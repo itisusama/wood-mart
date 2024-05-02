@@ -30,13 +30,19 @@ function ReactProgressBar() {
       className={isInView ? "experience-section animate" : "experience-section"}
       id="about"
       ref={experienceRef}
+      style={{
+        fontFamily: 'Roboto, sans-serif',
+        fontSize: '5px',
+        fontWeight: 400,
+        color: 'rgb(0, 0, 0)'
+      }}
     >
       <div className="container">
         <div className="experience-items">
           <div className="experience-item col-md-12">
             <div className="experience-info">
-              <p>facebook</p>
-              <p>90%</p>
+              <p>BRAND</p>
+              <p>78%</p>
             </div>
             <div className="progress-line" data-percent="90%">
               <span style={{ width: isInView ? "90%" : "0%" }}></span>
@@ -44,8 +50,8 @@ function ReactProgressBar() {
           </div>
           <div className="experience-item">
             <div className="experience-info">
-              <p>facebook</p>
-              <p>50%</p>
+              <p>BRAND</p>
+              <p>78%</p>
             </div>
             <div className="progress-line" data-percent="50%">
               <span style={{ width: isInView ? "50%" : "0%" }}></span>
@@ -53,7 +59,7 @@ function ReactProgressBar() {
           </div>
           <div className="experience-item">
             <div className="experience-info">
-              <p>facebook</p>
+              <p>ORIGINAL</p>
               <p>90%</p>
             </div>
             <div className="progress-line" data-percent="90%">
@@ -62,7 +68,7 @@ function ReactProgressBar() {
           </div>
           <div className="experience-item">
             <div className="experience-info">
-              <p>facebook</p>
+              <p>ORIGINAL</p>
               <p>90%</p>
             </div>
             <div className="progress-line" data-percent="90%">
@@ -71,7 +77,7 @@ function ReactProgressBar() {
           </div>
           <div className="experience-item">
             <div className="experience-info">
-              <p>facebook</p>
+              <p>EXPERIENCE</p>
               <p>90%</p>
             </div>
             <div className="progress-line" data-percent="90%">
@@ -80,7 +86,7 @@ function ReactProgressBar() {
           </div>
           <div className="experience-item">
             <div className="experience-info">
-              <p>facebook</p>
+              <p>EXPERIENCE</p>
               <p>90%</p>
             </div>
             <div className="progress-line" data-percent="90%">
