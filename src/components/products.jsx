@@ -7,9 +7,9 @@ const ProductCard = ({ imageSrc, title, price }) => {
                 <img src={imageSrc} className="card-img-top img-hover" alt={title} />
 
             </div>
-            <div className="card-body">
+            <div className="card-body mt-3">
                 <div className="d-flex justify-content-between align-items-center">
-                    <h6 className="card-title mb-0">{title}</h6>
+                    <h6 className="card-title mb-0 font-1">{title}</h6>
                     <p className="card-text mb-0">${price}</p>
                 </div>
             </div>
