@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import AllProducts from './pages/AllProducts';
-import SingleProduct from './pages/SingleProduct';
+import SingleProduct from './pages/SingleProduct'
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -25,7 +25,8 @@ const App = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/allproducts" element={<AllProducts/>} />
-        <Route path="/single-product" element={<SingleProduct/>} />
+        <Route path="/singleproduct" element={<SingleProduct/>} />
+
       </Routes>
       <Footer/>
     </Router>

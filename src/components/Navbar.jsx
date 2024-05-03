@@ -1,33 +1,18 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import AllProducts from '../pages/AllProducts';
 
 const Navbar = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
-    const [scrollPosition, setScrollPosition] = useState(0);
 
     const toggleNavVisibility = () => {
         setIsNavVisible(!isNavVisible);
     };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrollPosition(window.scrollY);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const navContainerClasses = `container-fluid nav-container mt-2`;
-
     return (
         <>
-            <div className={navContainerClasses}>
+            <div className='container-fluid nav-container mt-2'>
                 <section className='py-1 p-2 bg-transparent'>
                     <div><h3 className='text-white logo'>Wood Mart</h3></div>
 
@@ -42,7 +27,7 @@ const Navbar = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>All Products</Link> </Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-product" className='linkStyle'>Single Product</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/singleproduct" className='linkStyle'>Single Product</Link></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
@@ -60,7 +45,6 @@ const Navbar = () => {
                             </li>
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
-                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
                         </ul>
                     </div>
 
@@ -84,8 +68,8 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>All Products</Link> </Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-product" className='linkStyle'>Single Product</Link></Dropdown.Item>
+                                        <Dropdown.Item href="#/action-1">All Products</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-2">Single Products</Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
@@ -108,8 +92,6 @@ const Navbar = () => {
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <br/>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
-                            <br/>
-                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
                         </ul>
                     </div>
                 </nav>
