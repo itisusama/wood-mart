@@ -45,10 +45,7 @@ const Navbar = () => {
                             </li>
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
-<<<<<<< HEAD
-=======
                             <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
->>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
                         </ul>
                     </div>
 
@@ -96,11 +93,8 @@ const Navbar = () => {
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <br/>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
-<<<<<<< HEAD
-=======
                             <br/>
                             <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
->>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
                         </ul>
                     </div>
                 </nav>
