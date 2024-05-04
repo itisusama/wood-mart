@@ -8,11 +8,8 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import AllProducts from './pages/AllProducts';
 import SingleProduct from './pages/SingleProduct'
-<<<<<<< HEAD
-=======
 import Faq from './pages/Faq';
 import SingleBlog from './pages/SingleBlog';
->>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -31,12 +28,9 @@ const App = () => {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/allproducts" element={<AllProducts/>} />
         <Route path="/singleproduct" element={<SingleProduct/>} />
-<<<<<<< HEAD
 
-=======
         <Route path="/faq" element={<Faq/>} />
         <Route path="/single-blog" element={<SingleBlog/>} />
->>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
       </Routes>
       <Footer/>
     </Router>
