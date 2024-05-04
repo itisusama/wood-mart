@@ -1,38 +1,4 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
-import { Button } from 'react-bootstrap';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import BreadCrumb from '../components/BreadCrumb';
-
-
-const SingleProduct = () => {
-
-    const [quantity, setQuantity] = useState(1);
-    const product = {
-        name: 'Example Product',
-        price: '$99.99',
-        ratings: 4.5,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        color: 'Black',
-        material: 'Wood',
-        image: 'product-image.jpg',
-    };
-
-    const handleAddToCart = () => {
-        // Add your logic for adding to cart here
-    };
-
-    const handleAddToWishlist = () => {
-        // Add your logic for adding to wishlist here
-    };
-
-  
-  return (
-    <>
-      <BreadCrumb pageName='Single Product' />
-
-      <Container className='mt-4'>
-=======
 import { Container, Row, Col } from 'react-bootstrap';
 import BreadCrumb from '../components/BreadCrumb';
 import Newsletter from '../components/Newsletter';
@@ -55,7 +21,6 @@ const SingleProduct = () => {
     <>
       <BreadCrumb pageName='Single Product' />
       <Container className='my-4'>
->>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
         <Row>
             <Col md={6}>
                 <Row>
@@ -73,16 +38,6 @@ const SingleProduct = () => {
             <Col md={6} className='mt-2'>
               <h2>Product Name</h2>
               <small>$30.00</small>
-<<<<<<< HEAD
-            </Col>
-        </Row>
-      </Container>
-    </>
-  );
-}
-
-export default SingleProduct;
-=======
               <div className="stars">
                 <CiStar />
                 <CiStar />
@@ -137,5 +92,4 @@ export default SingleProduct;
   )
 }
 
-export default SingleProduct
->>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
+export default SingleProduct;
