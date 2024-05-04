@@ -39,12 +39,16 @@ const Navbar = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-1">All Blogs</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Single Blog</Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'><strong>Single Blog</strong></Link></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
+<<<<<<< HEAD
+=======
+                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
+>>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
                         </ul>
                     </div>
 
@@ -69,7 +73,7 @@ const Navbar = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-1">All Products</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Single Products</Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'><strong>Single Blog</strong></Link></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
@@ -92,6 +96,11 @@ const Navbar = () => {
                             <Link to="/about" className='linkStyle'><strong>About</strong></Link>
                             <br/>
                             <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
+<<<<<<< HEAD
+=======
+                            <br/>
+                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
+>>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
                         </ul>
                     </div>
                 </nav>

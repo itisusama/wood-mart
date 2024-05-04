@@ -32,4 +32,8 @@ const SalesBanner = () => {
   )
 }
 
+<<<<<<< HEAD
 export default SalesBanner;
+=======
+export default SalesBanner;
+>>>>>>> 92d1338f330f51edd6652dc6850eed36e43813d8
