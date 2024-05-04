@@ -82,7 +82,7 @@ const Navbar = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-1">All Blogs</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Single Blog</Dropdown.Item>
+                                        <Dropdown.Item href="/single-blog">Single Blog</Dropdown.Item>
                                     </Dropdown.Menu>
 
                                 </Dropdown>
