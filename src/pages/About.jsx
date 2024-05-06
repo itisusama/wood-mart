@@ -32,39 +32,41 @@ const About = () => {
 
   return (
     <>
-      <BreadCrumb pageName='About Us'/> 
+      <BreadCrumb pageName='About Us' />
       {/* Our Blog */}
       <Container className='mt-4'>
         <h3 className='text-center'>Read Our Blogs</h3>
-        <section className='d-flex justify-content-around'>
+        <section className='row justify-content-center'>
           {/* Map through the blogs array */}
           {blogs.map((blog, index) => (
-            <div className='mt-3' key={index}>
-              <img src={blog.imageUrl} alt="Placeholder Image" className="img-fluid"/>
-              <div>
-                <h4 className='mt-3'>{blog.date}</h4>
+            <div className='col-12 col-md-6 col-lg-4 mt-3' key={index}>
+              <img src={blog.imageUrl} alt="Placeholder Image" className="img-fluid" />
+              <div className="mt-3">
+                <h4>{blog.date}</h4>
                 <h3>{blog.title}</h3>
-                <p style={{width:'300px'}} className='text-justify'>{blog.content}<br /> <a href="#">Read More</a></p>
+                <p className='text-justify'>{blog.content}</p>
+                <button type='button' className='btn btn-primary mt-2'>Read More</button>
               </div>
             </div>
-          ))} 
+          ))}
         </section>
       </Container>
+
       {/* Our Blog */}
       <Container className='my-3'>
         <div className="row">
-            <div className='col-md-6'>
-              <img src={imgOne} alt="one" className='img-fluid rounded' style={{width:'90%'}}/>
-            </div>
-            <div className='col-md-6'>
-              <h1>Heading goes here</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, obcaecati facilis asperiores, dolore sint pariatur veritatis dolor nam doloribus culpa eius quo voluptatibus cumque quae possimus doloremque illo officia ratione eligendi, unde odio! Similique nisi provident commodi, quam beatae sunt optio excepturi doloribus reprehenderit molestiae, hic explicabo deleniti. Id quos illum officiis tempora a accusantium nihil sed ab asperiores impedit, aspernatur magni. Corrupti necessitatibus dolores quod ad sint sunt maxime nulla nisi natus, perspiciatis facere sequi tempore impedit distinctio!</p>
-            </div>
+          <div className='col-md-6'>
+            <img src={imgOne} alt="one" className='img-fluid rounded' style={{ width: '90%' }} />
+          </div>
+          <div className='col-md-6'>
+            <h1>Heading goes here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, obcaecati facilis asperiores, dolore sint pariatur veritatis dolor nam doloribus culpa eius quo voluptatibus cumque quae possimus doloremque illo officia ratione eligendi, unde odio! Similique nisi provident commodi, quam beatae sunt optio excepturi doloribus reprehenderit molestiae, hic explicabo deleniti. Id quos illum officiis tempora a accusantium nihil sed ab asperiores impedit, aspernatur magni. Corrupti necessitatibus dolores quod ad sint sunt maxime nulla nisi natus, perspiciatis facere sequi tempore impedit distinctio!</p>
+          </div>
         </div>
       </Container>
-      <BannerSection heading="Welcome to Site Name" paragraph="Explore and discover amazing things." btnText="Discover"/>
-      <CustomerTestimonials/>
-      <Newsletter/>
+      <BannerSection heading="Welcome to Site Name" paragraph="Explore and discover amazing things." btnText="Discover" />
+      <CustomerTestimonials />
+      <Newsletter />
     </>
   )
 }
