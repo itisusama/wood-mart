@@ -38,8 +38,8 @@ const Navbar = () => {
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">All Blogs</Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'><strong>Single Blog</strong></Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>All Blogs</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Single Blog</Link></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
@@ -82,7 +82,7 @@ const Navbar = () => {
 
                                     <Dropdown.Menu>
                                         <Dropdown.Item href="#/action-1">All Blogs</Dropdown.Item>
-                                        <Dropdown.Item href="/single-blog">Single Blog</Dropdown.Item>
+                                        <Dropdown.Item href="#/action-2">Single Blog</Dropdown.Item>
                                     </Dropdown.Menu>
 
                                 </Dropdown>

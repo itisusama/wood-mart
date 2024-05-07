@@ -1,4 +1,5 @@
 import React from 'react';
+import imgOne from '../assets/images/man.jpg';
 
 const SectionWithImage = () => {
     return (
@@ -14,7 +15,7 @@ const SectionWithImage = () => {
                 </div>
                 <div className="col-md-6 order-md-1" data-aos='fade-left'>
                     <img
-                        src="https://via.placeholder.com/500"
+                        src={imgOne}
                         alt="Placeholder Image"
                         className="img-fluid"
                     />

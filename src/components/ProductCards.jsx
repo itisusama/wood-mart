@@ -1,44 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
+import AllProduct1 from '../assets/images/ap1.jpg'
+import AllProduct2 from '../assets/images/ap2.jpg'
+import AllProduct3 from '../assets/images/ap3.jpg'
+import AllProduct4 from '../assets/images/ap4.jpg'
+import AllProduct5 from '../assets/images/ap5.jpg'
+import AllProduct6 from '../assets/images/ap6.jpg'
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const ProductCards = () => {
   const services = [
     {
-      title: 'Product Name',
-      imageSrc: 'https://via.placeholder.com/250x250',
+      title: 'Vintage Chair',
+      imageSrc: AllProduct1,
       description: 'Lorem ipsum, dolor sit amet consectetur adipisicing...',
       price: '100$'
     },
     {
-        title: 'Product Name',
-        imageSrc: 'https://via.placeholder.com/250x250',
+        title: 'Home Light',
+        imageSrc: AllProduct2,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing...',
         price: '100$'
       },
       {
-        title: 'Product Name',
-        imageSrc: 'https://via.placeholder.com/250x250',
+        title: 'Echinocactus',
+        imageSrc: AllProduct3,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing...',
         price: '100$'
       },
       {
-        title: 'Product Name',
-        imageSrc: 'https://via.placeholder.com/250x250',
+        title: 'Evergreen',
+        imageSrc: AllProduct4,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing...',
         price: '100$'
       },
       {
-        title: 'Product Name',
-        imageSrc: 'https://via.placeholder.com/250x250',
+        title: 'Sideboard',
+        imageSrc: AllProduct5,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing...',
         price: '100$'
       },
       {
-        title: 'Product Name',
-        imageSrc: 'https://via.placeholder.com/250x250',
+        title: 'Floor lamp',
+        imageSrc: AllProduct6,
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing...',
         price: '100$'
       },
@@ -92,9 +99,10 @@ const ProductCards = () => {
             <div className="card m-3">
               <Link to={service.route}><img className="card-img-top img-fluid" src={service.imageSrc} alt="Card image" style={{width: "100%"}} /></Link>
               <div className="card-body">
-                <h5 className="card-title">{service.title}</h5>
+                <h5 className="card-title text-uppercase font-1">{service.title}</h5>
                 <p className="card-text">
-                  <small>{service.description}</small> <Link to={service.route} className='text-red'>Read More</Link> <br />
+                  <small>{service.description}</small> <br/>
+                  <Link to='/singleproduct' className='text-red' style={{color:'#e0b354 '}}>Read More</Link> <br />
                   <span style={{float:'right'}}><b>{service.price}</b></span>
                 </p>
               </div>

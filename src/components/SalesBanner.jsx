@@ -20,7 +20,7 @@ const SalesBanner = () => {
     >
       <Container>
         <div className="row">
-          <div className='col-md-6'><img src={Furniture} alt="furniture" className='img-fluid' style={{width: '90%'}} /></div>
+          {/* <div className='col-md-6'><img src={Furniture} alt="furniture" className='img-fluid' style={{width: '90%'}} /></div> */}
           <div className='col-md-6 d-flex flex-column justify-content-center align-items-center'>
             <h3>Furniture Name</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, non.</p>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, Container, Row, Col } from 'react-bootstrap';
+import imgOne from '../assets/images/dualone.jpg';
+import imgTwo from '../assets/images/dualtwo.jpg';
 
 const DualImageDisplay = () => {
   return (
@@ -19,7 +21,8 @@ const DualImageDisplay = () => {
             <Col>
               <div className="image-container mb-3 mb-md-0">
                 <img
-                  src="https://via.placeholder.com/300x400"
+                style={{width:"250px"}}
+                  src={imgOne}
                   alt="Placeholder Image 1"
                   className="floating-image1"
                 />
@@ -29,7 +32,8 @@ const DualImageDisplay = () => {
             <Col>
               <div className="image-container d-none d-md-block">
                 <img
-                  src="https://via.placeholder.com/250x300"
+                style={{width:"200px"}}
+                  src={imgTwo}
                   alt="Placeholder Image 1"
                   className="floating-image2 img2"
                 />

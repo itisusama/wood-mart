@@ -2,7 +2,10 @@ import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
 import { Container } from 'react-bootstrap';
 import BannerSection from '../components/Banner';
-import imgOne from '../assets/images/img6.jpg';
+import About4 from '../assets/images/wood1.webp';
+import About1 from '../assets/images/about1.jpg'
+import About2 from '../assets/images/about2.jpg'
+import About3 from '../assets/images/about3.jpg'
 import Newsletter from '../components/Newsletter';
 import CustomerTestimonials from '../components/CustomerTestimonials';
 
@@ -14,19 +17,19 @@ const About = () => {
       date: '26 April 2024 - Friday',
       title: 'Blog Title 1',
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, laudantium.',
-      imageUrl: 'https://via.placeholder.com/350x500',
+      imageUrl: About1,
     },
     {
       date: '26 April 2024 - Friday',
       title: 'Blog Title 2',
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, laudantium.',
-      imageUrl: 'https://via.placeholder.com/350x500',
+      imageUrl: About2,
     },
     {
       date: '26 April 2024 - Friday',
       title: 'Blog Title 3',
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, laudantium.',
-      imageUrl: 'https://via.placeholder.com/350x500',
+      imageUrl: About3,
     },
   ];
 
@@ -53,10 +56,10 @@ const About = () => {
       </Container>
 
       {/* Our Blog */}
-      <Container className='my-3'>
+      <Container className='my-3 mt-5'>
         <div className="row">
           <div className='col-md-6'>
-            <img src={imgOne} alt="one" className='img-fluid rounded' style={{ width: '90%' }} />
+            <img src={About4} alt="one" className='img-fluid rounded' style={{ width: '100%', height:'70%' }} />
           </div>
           <div className='col-md-6'>
             <h1>Heading goes here</h1>
@@ -64,7 +67,7 @@ const About = () => {
           </div>
         </div>
       </Container>
-      <BannerSection heading="Welcome to Site Name" paragraph="Explore and discover amazing things." btnText="Discover" />
+      <BannerSection  heading="Welcome to Site Name" paragraph="Explore and discover amazing things." btnText="Discover" />
       <CustomerTestimonials />
       <Newsletter />
     </>

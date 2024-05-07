@@ -10,6 +10,7 @@ import AllProducts from './pages/AllProducts';
 import SingleProduct from './pages/SingleProduct'
 import Faq from './pages/Faq';
 import SingleBlog from './pages/SingleBlog';
+import Blog from './pages/Blog';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
 
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/singleproduct" element={<SingleProduct/>} />
         <Route path="/faq" element={<Faq/>} />
         <Route path="/single-blog" element={<SingleBlog/>} />
+        <Route path="/blog" element={<Blog/>} />
       </Routes>
       <Footer/>
     </Router>
