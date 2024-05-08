@@ -31,7 +31,7 @@ const CustomerTestimonials = () => {
 
   return (
     <Container className="customer-testimonials">
-      <h2 className="text-center mt-5">What Our Customers Say</h2>
+      <h2 className="text-center mt-5 font-1"><strong>What Our Customers Say</strong></h2>
       <Row>
         {testimonials.map((testimonial) => (
           <Col key={testimonial.id} md={4}>
