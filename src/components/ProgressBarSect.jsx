@@ -5,8 +5,8 @@ import ReactProgressBar from "./ReactProgressBar";
 function ProgressBarSect() {
   return (
 
-    <Container style={{ height: "100vh" }}>
-      <Row className="pt-5 " style={{}}>
+    <Container>
+      <Row className="pt-2">
         <Col lg={6} md={6} xs={12} >
           <div className="title text-uppercase fw-normal">
             <h3 className="font-2">Process</h3>

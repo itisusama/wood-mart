@@ -21,16 +21,16 @@ const CustomerTestimonials = () => {
     },
     {
       id: 3,
-      quote: "The selection of furniture is impressive, and the design team helped me find the perfect pieces for my home. I couldn't be happier.",
+      quote: "The selection of furniture is impressive, and the design team helped me find the perfect pieces for my home. Lorem",
       author: "Michael Johnson",
-      title: "Interior Designer",
+      title: "Designer",
       image: "https://i.pravatar.cc/100?img=8",
       backgroundColor: "#d1ecf1"
     }
   ];
 
   return (
-    <Container className="customer-testimonials">
+    <Container className="customer-testimonials mb-2">
       <h2 className="text-center mt-5 font-1"><strong>What Our Customers Say</strong></h2>
       <Row>
         {testimonials.map((testimonial) => (
