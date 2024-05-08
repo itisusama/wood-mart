@@ -1,5 +1,6 @@
 import React from 'react';
 import BreadCrumb from '../components/BreadCrumb';
+import Blog1 from '../assets/images/blog1.jpg'
 import Right from '../components/Right';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +22,7 @@ const Blog = () => {
               <div key={index} className="col-md-4 p-2">
                 {/* card */}
                 <div className="card" data-aos="fade-up" data-aos-delay="1000">
-                  <Link to='/single-blog'><img className="card-img-top img-fluid" src={`https://via.placeholder.com/350x350`} alt="Card image" style={{ width: '100%' }} /></Link>
+                  <Link to='/single-blog'><img className="card-img-top img-fluid" src={Blog1} alt="Card image" style={{ width: '100%' }} /></Link>
                   <div className="card-body">
                     <h5 className="card-title">Title Goes Here</h5>
                     <div className="d-flex gap-2">
@@ -31,7 +32,7 @@ const Blog = () => {
                     <p className="card-text small">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis recusandae sint similique!...
                       <div className="pc-newsletter-btn">
-                        <Link to='/single-blog' className='linkStyle btn'> Read More </Link>
+                        <Link to='/single-blog' className='linkStyle btn btn-primary '> Read More </Link>
                       </div>
                     </p>
                   </div>

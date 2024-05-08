@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BreadCrumb from '../components/BreadCrumb';
+import AllProduct1 from '../assets/images/ap1.jpg'
 import Newsletter from '../components/Newsletter';
 import { CiStar } from "react-icons/ci";
 
@@ -25,13 +26,13 @@ const SingleProduct = () => {
             <Col md={6}>
                 <Row>
                     <Col md={2}>
-                      <img className='mt-2' src="https://via.placeholder.com/70x70" alt="1" />
-                      <img className='mt-2' src="https://via.placeholder.com/70x70" alt="1" />
-                      <img className='mt-2' src="https://via.placeholder.com/70x70" alt="1" />
-                      <img className='mt-2' src="https://via.placeholder.com/70x70" alt="1" />
+                      <img className='mt-2' style={{width:'100px', height:'100px'}} src={AllProduct1} alt="1" />
+                      <img className='mt-2' style={{width:'100px', height:'100px'}} src={AllProduct1} alt="1" />
+                      <img className='mt-2' style={{width:'100px', height:'100px'}} src={AllProduct1} alt="1" />
+                      <img className='mt-2' style={{width:'100px', height:'100px'}} src={AllProduct1} alt="1" />
                     </Col>
                     <Col md={10}>
-                      <img className='mt-2' src="https://via.placeholder.com/450x350" alt="1" />  
+                      <img  style={{width:'100%', height:'100%'}} src={AllProduct1} alt="1" />  
                     </Col>
                 </Row>
             </Col>
