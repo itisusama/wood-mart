@@ -4,7 +4,7 @@ import { FaEnvelope } from "react-icons/fa6";
 const Newsletter = () => {
   return (
     <>
-      <div class="intro-header my-3">
+      <div class="intro-header">
         <div class="newsletter-container" align="center">
           <div class="tab-content custom-tab-content" align="center">
             <div class="subscribe-panel">

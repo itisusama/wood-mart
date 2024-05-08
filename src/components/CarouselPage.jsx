@@ -7,9 +7,9 @@ import img3 from '../assets/images/img3.jpg';
 function CarouselPage() {
   return (
     <>
-    <Carousel>
+    <Carousel className='home-carousel'>
     <Carousel.Item>
-      <img style={{height:'90vh'}}
+      <img
         className="d-block w-100"
         src={img1}
         alt="First slide"
@@ -20,7 +20,7 @@ function CarouselPage() {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img style={{height:'90vh'}}
+      <img
         className="d-block w-100"
         src={img2}
         alt="Second slide"
@@ -32,7 +32,7 @@ function CarouselPage() {
       </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
-      <img style={{height:'90vh'}}
+      <img
         className="d-block w-100"
         src={img3}
         alt="Third slide"
