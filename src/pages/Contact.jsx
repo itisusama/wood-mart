@@ -10,21 +10,21 @@ const Contact = () => {
       <div className="container mt-3">
             <div className="row">
                 <div className="col-md-6">
-                    <h4 className="mb-3">Contact Us</h4>
-                    <h4 className="mb-3" style={{ fontWeight: 'bold', fontSize: '1.5em' }}>GOT ANY QUESTIONS?</h4>
+                    <h4 className="mb-3 font-1"><strong>Contact Us</strong></h4>
+                    <h4 className="mb-3 font-1" style={{ fontWeight: 'bold', fontSize: '1.5em' }}><strong>GOT ANY QUESTIONS?</strong></h4>
                     <p className="mb-4">
                         Please fill out the form below to send us a message. We'll get back to you as soon as possible.
                     </p>
                     <div className="row">
                         <div className="col-12 col-md-6">
-                            <h5>Office</h5>
+                            <h5 className='font-1'><strong>Office</strong></h5>
                             <p>1316 Abbot Kinney Blvd.</p>
                             <p>Copenhagen UK 90291</p>
                             <p>+112 345 6789</p>
                             <p>Woodworth@example.com</p>
                         </div>
                         <div className="col-12 col-md-6">
-                            <h5>Store</h5>
+                            <h5 className='font-1'><strong>Store</strong></h5>
                             <p>1316 Abbot Kinney Blvd.</p>
                             <p>Copenhagen CA 90291</p>
                             <p>+112 345 6789</p>

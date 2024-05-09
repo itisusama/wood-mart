@@ -87,7 +87,7 @@ const ProductCards = () => {
   return (
     <section className="mt-4 mb-5">
       <div className="title pt-3 d-flex justify-content-center mb-3">
-        <h2 className="position-relative ms-4">Our Products</h2>
+        <h2 className="position-relative ms-4 font-1"><strong>Our Products</strong></h2>
       </div>
       <div className="container">
         <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis atque animi quae vel doloribus magni adipisci explicabo, placeat quos quisquam a rerum alias totam suscipit ab consequatur possimus eius temporibus rem vero nisi tempore magnam voluptates? Dicta, earum.</p>

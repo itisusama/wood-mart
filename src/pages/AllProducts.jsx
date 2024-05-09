@@ -32,7 +32,7 @@ const AllProductsSection = () => {
 
       <Container className="my-5">
 
-        <h2 className="text-center mb-4">All Products</h2>
+        <h2 className="text-center mb-4 font-1"><strong>All Products</strong></h2>
         <Row xs={1} md={2} lg={3} className="g-4">
           {products.map(product => (
             <Col key={product.id}>

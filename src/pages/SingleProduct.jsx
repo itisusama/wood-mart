@@ -37,7 +37,7 @@ const SingleProduct = () => {
                 </Row>
             </Col>
             <Col md={6} className='mt-2'>
-              <h2>Product Name</h2>
+              <h2 className='font-1'><strong>Product Name</strong></h2>
               <small>$30.00</small>
               <div className="stars">
                 <CiStar />
@@ -49,7 +49,7 @@ const SingleProduct = () => {
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   <aside class="col-md-6">
-                      <h5>Features</h5>
+                      <h5 className='font-1'><strong>Features</strong></h5>
                       <ul class="list-check">
                           <li>Lorem ipsum dolor sit amet.</li>
                           <li>Lorem ipsum dolor sit amet.</li>
@@ -80,7 +80,7 @@ const SingleProduct = () => {
                 <button onClick={handleIncrement} style={{border:'none', outline:'none', backgroundColor:'transparent'}} className='border'>+</button>
                 <button className='btn btn-primary' style={{marginLeft:'50px'}}>Add to Cart</button>
               </div>
-              <p>
+              <p className='font-1'> 
                 <small><b>SKU:</b> 0347</small><br />
                 <small><b>CATEGORY:</b> Style</small><br />
                 <small><b>TAGS:</b> Decore, House</small>
