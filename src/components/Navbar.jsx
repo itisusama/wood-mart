@@ -1,31 +1,28 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
+import { FaBars } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+import AllProducts from '../pages/AllProducts';
 
 const Navbar = () => {
-  return (
-    <>
-      {/* START::Navbar */}
-      <nav className="navbar navbar-expand-md bg-light fixed-top footer">
-        <div className="container">
-          <Link to="/" className='linkStyle nav-brand'><b>Wood Mart</b></Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="offcanvas offcanvas-start" tabIndex="1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div className="offcanvas-header">
-              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Wood Mart</h5>
-              <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div className="offcanvas-body">
-              <ul className="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
-                <li className="nav-item">
-                  <Link to="/" className='linkStyle nav-link active text-white' aria-current="page">Home</Link>
-                </li>
-                <li className="nav-item dropdown">
-                <Dropdown>
+    const [isNavVisible, setIsNavVisible] = useState(false);
+
+    const toggleNavVisibility = () => {
+        setIsNavVisible(!isNavVisible);
+    };
+    return (
+        <>
+            <div className='container-fluid nav-container mt-2'>
+                <section className='py-1 p-2 bg-transparent'>
+                    <div><h3 className='text-white logo'>Wood Mart</h3></div>
+
+                    <div className='desktop-navbar-item'>
+                        <ul className='list-unstyled d-flex gap-2 align-items-center'>
+                            <Link to="/" className='linkStyle'><b>Home</b></Link>
+                            <li>
+                                <Dropdown>
                                     <Dropdown.Toggle variant="none" className='text-white' id="dropdown-basic">
-                                        Shop
+                                        <strong>Shop</strong>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
@@ -33,12 +30,11 @@ const Navbar = () => {
                                         <Dropdown.Item><Link to="/singleproduct" className='linkStyle'>Single Product</Link></Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
-                </li>
-
-                <li>
+                            </li>
+                            <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" className='text-white' id="dropdown-basic">
-                                        Blog
+                                        <strong>Blog</strong>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
@@ -47,30 +43,65 @@ const Navbar = () => {
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
+                            <Link to="/about" className='linkStyle ml-3'><strong>About</strong></Link>
+                            <Link to="/contact" className='linkStyle ml-3'><strong>Contact</strong></Link>
+                            <Link to="/faq" className='linkStyle ml-3'><strong>Faq</strong></Link>
+                        </ul>
+                    </div>
 
-                <li className="nav-item">
-                  <Link className="nav-link text-white" to='/about'>About</Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link text-white" to='/contact'>Contact</Link>
-                </li>
-
-                <li className="nav-item">
-                  <Link className="nav-link text-white" to='/faq'>Faq</Link>
-                </li>
-
-              </ul>
-              <form className="d-flex mt-3" role="search">
-                <button className="btn btn-primary" type="submit">Book Now</button>
-              </form>
+                    <div className='desktop-navbar-item'>
+                        <button className='btn btn-primary px-4 rounded-pill'>Register</button>
+                    </div>
+                </section>
+                <a href="#" id='nav-toggle' onClick={toggleNavVisibility}><FaBars className='bars' /></a>
             </div>
-          </div>
-        </div>
-      </nav>
-      {/* END::Navbar */}
-    </>
-  )
+
+            {/* Mobile Navbar */}
+            <div className='mobile-navbar container-fluid' style={{ display: isNavVisible ? 'block' : 'none' }}>
+                <nav>
+                    <div>
+                        <ul className='list-unstyled'>
+                            <li><b>Home</b></li>
+                            <li>
+                                <Dropdown>
+                                    <Dropdown.Toggle variant="none" id="dropdown-basic">
+                                        <strong>Shop</strong>
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="#/action-1">All Products</Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'><strong>Single Blog</strong></Link></Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </li>
+                            <li>
+                                <Dropdown>
+                                    <Dropdown.Toggle variant="none" id="dropdown-basic">
+                                        <strong>Blog</strong>
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="#/action-1"><Link to="/blog" className='linkStyle'>Blog</Link></Dropdown.Item>
+                                        <Dropdown.Item href="#/action-2"><Link to="/single-blog" className='linkStyle'>Single Blog</Link></Dropdown.Item>
+                                    </Dropdown.Menu>
+
+                                </Dropdown>
+                            </li>
+                            <li>
+                                
+                            </li>
+                            <Link to="/about" className='linkStyle'><strong>About</strong></Link>
+                            <br/>
+                            <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
+                            <br/>
+                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            {/* Mobile Navbar */}
+        </>
+    )
 }
 
-export default Navbar
+export default Navbar;
