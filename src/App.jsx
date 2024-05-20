@@ -13,6 +13,11 @@ import SingleBlog from './pages/SingleBlog';
 import Blog from './pages/Blog';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
+import Chatbot from 'react-chatbot-kit';
+import 'react-chatbot-kit/build/main.css';
+import ActionProvider from './pages/ActionProvider'
+import MessageParser from './pages/MessageParser';
+import config from './pages/config';
 
 const App = () => {
 //   useEffect(() => {
@@ -33,6 +38,7 @@ const App = () => {
         <Route path="/single-blog" element={<SingleBlog/>} />
         <Route path="/blog" element={<Blog/>} />
       </Routes>
+      <Chatbot config={config} actionProvider={ActionProvider} 	    messageParser={MessageParser} />
       <Footer/>
     </Router>
     </>
