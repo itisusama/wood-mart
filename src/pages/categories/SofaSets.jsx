@@ -37,7 +37,7 @@ const SofaSets = () => {
   return (
     <>
       <BreadCrumb pageName='All Products' />
-      <div className="container my-5">
+      <div className="container my-5 mt-2">
         <h1 className="mb-4">Sofa Sets</h1>
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div>
