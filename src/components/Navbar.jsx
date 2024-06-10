@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Dropdown from 'react-bootstrap/Dropdown';
 import { FaBars } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import AllProducts from '../pages/AllProducts';
+// import AllProducts from '../pages/AllProducts';
+import SofaSets from '../pages/categories/SofaSets';
 
 const Navbar = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -12,46 +13,94 @@ const Navbar = () => {
     };
     return (
         <>
-            <div className='container-fluid nav-container mt-2'>
+            <div className='container-fluid nav-container'>
                 <section className='py-1 p-2 bg-transparent'>
-                    <div><h3 className='text-white logo'>Wood Mart</h3></div>
+                    <div>
+                        <h3 className='text-white logo'>Wood Mart</h3>
+                    </div>
 
                     <div className='desktop-navbar-item'>
                         <ul className='list-unstyled d-flex gap-2 align-items-center'>
-                            <Link to="/" className='linkStyle'><b>Home</b></Link>
+                            <Link to="/" className='linkStyle'>Home</Link>
                             <li>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="none" className='text-white' id="dropdown-basic">
-                                        <strong>Shop</strong>
+                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                        Living Room
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>All Products</Link> </Dropdown.Item>
-                                        <Dropdown.Item><Link to="/singleproduct" className='linkStyle'>Single Product</Link></Dropdown.Item>
+                                        <Dropdown.Item> <Link to="/sofa-sets" className='linkStyle'>Sofa Sets</Link> </Dropdown.Item>
+                                        <Dropdown.Item><Link to="/singleproduct" className='linkStyle'>Corner Sofas</Link></Dropdown.Item>
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Sofas</Link> </Dropdown.Item>
+
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Armchairs</Link> </Dropdown.Item>
+
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Living Room Sets</Link> </Dropdown.Item>
+
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Shop All Sofas</Link> </Dropdown.Item>
+
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
                             <li>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="none" className='text-white' id="dropdown-basic">
-                                        <strong>Blog</strong>
+                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                        Dining Room
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>All Blogs</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Single Blog</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Dining Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Dining Tables</Link></Dropdown.Item>
+
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
-                            <Link to="/about" className='linkStyle ml-3'><strong>About</strong></Link>
-                            <Link to="/contact" className='linkStyle ml-3'><strong>Contact</strong></Link>
-                            <Link to="/faq" className='linkStyle ml-3'><strong>Faq</strong></Link>
+                            <li>
+                                <Dropdown>
+                                <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                        Bedroom
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Bedroom Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Storage Beds</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Young Room Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Beds</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Bed Set</Link></Dropdown.Item>
+
+                                    </Dropdown.Menu>
+
+                                </Dropdown>
+                            </li>
+                            <li>
+                                <Dropdown>
+                                <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                        Accessories
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Coffee Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Nesting Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Accessories</Link></Dropdown.Item>
+                                    </Dropdown.Menu>
+
+                                </Dropdown>
+                            </li>
+                            
+                            <Link to="/about" className='linkStyleLink ml-3'>Sofas</Link>
+                            <Link to="/about" className='linkStyleLink ml-3'>Mattressses</Link>
+                            <Link to="/about" className='linkStyleLink ml-3'>Dispaly Offers</Link>
+                            <Link to="/contact" className='linkStyleLink ml-3'>Contact</Link>
+                            {/* <Link to="/faq" className='linkStyle ml-3'>Faq</Link> */}
+
                         </ul>
                     </div>
 
-                    <div className='desktop-navbar-item'>
+                    {/* <div className='desktop-navbar-item'>
                         <button className='btn btn-primary px-4 rounded-pill'>Register</button>
-                    </div>
+                    </div> */}
                 </section>
                 <a href="#" id='nav-toggle' onClick={toggleNavVisibility}><FaBars className='bars' /></a>
             </div>
@@ -61,40 +110,82 @@ const Navbar = () => {
                 <nav>
                     <div>
                         <ul className='list-unstyled'>
-                            <li><b>Home</b></li>
+                            <li>Home</li>
                             <li>
                                 <Dropdown>
                                     <Dropdown.Toggle variant="none" id="dropdown-basic">
-                                        <strong>Shop</strong>
+                                        Living Room
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1">All Products</Dropdown.Item>
-                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'><strong>Single Blog</strong></Link></Dropdown.Item>
+                                        <Dropdown.Item href="allproducts">Sofa Sets</Dropdown.Item>
+                                        <Dropdown.Item><Link to="/singleproduct" className='linkStyle'>Corner Sofas</Link></Dropdown.Item>
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Sofas</Link> </Dropdown.Item>
+
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Armchairs</Link> </Dropdown.Item>
+
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Living Room Sets</Link> </Dropdown.Item>
+
+                                        <Dropdown.Item> <Link to="/allproducts" className='linkStyle'>Shop All Sofas</Link> </Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
                             <li>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="none" id="dropdown-basic">
-                                        <strong>Blog</strong>
+                                <Dropdown.Toggle variant="none" id="dropdown-basic">
+                                        Dining Room
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu>
-                                        <Dropdown.Item href="#/action-1"><Link to="/blog" className='linkStyle'>Blog</Link></Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2"><Link to="/single-blog" className='linkStyle'>Single Blog</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Dining Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Dining Tables</Link></Dropdown.Item>
+
+                                    </Dropdown.Menu>
+
+                                </Dropdown>
+                            </li>
+                            
+                            <li>
+                                <Dropdown>
+                                <Dropdown.Toggle variant="none"  id="dropdown-basic">
+                                        Bedroom
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Bedroom Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Storage Beds</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Young Room Sets</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Beds</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Bed Set</Link></Dropdown.Item>
+
                                     </Dropdown.Menu>
 
                                 </Dropdown>
                             </li>
                             <li>
-                                
+                                <Dropdown>
+                                <Dropdown.Toggle variant="none"  id="dropdown-basic">
+                                        Accessories
+                                    </Dropdown.Toggle>
+
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item><Link to="/blog" className='linkStyle'>Coffee Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Nesting Tables</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>TV Units</Link></Dropdown.Item>
+                                        <Dropdown.Item><Link to="/single-blog" className='linkStyle'>Shop All Accessories</Link></Dropdown.Item>
+                                    </Dropdown.Menu>
+
+                                </Dropdown>
                             </li>
-                            <Link to="/about" className='linkStyle'><strong>About</strong></Link>
-                            <br/>
-                            <Link to="/contact" className='linkStyle'><strong>Contact</strong></Link>
-                            <br/>
-                            <Link to="/faq" className='linkStyle'><strong>Faq</strong></Link>
+                            <Link to="/about" className='linkStylemobile'>Sofas</Link>
+                            <br />
+                            <Link to="/about" className='linkStylemobile'>Mattresses</Link>
+                            <br />
+                            <Link to="/about" className='linkStylemobile'>Display Offers</Link>
+                            <br />
+                            <Link to="/contact" className='linkStylemobile'>Contact</Link>
+                            
                         </ul>
                     </div>
                 </nav>
