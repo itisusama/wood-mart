@@ -8,7 +8,7 @@ const Faq = () => {
     <>
      <BreadCrumb pageName='Faq Page'/>
      <Container className='my-4'>
-        <h2 className='text-center'>Frequently Asked Questions</h2>
+        <h2 className='text-center font-1'><strong>Frequently Asked Questions</strong></h2>
         
         <Row>
             <Col md={6}>

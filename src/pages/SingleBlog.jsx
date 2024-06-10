@@ -26,7 +26,7 @@ const SingleBlog = () => {
                     {/* Top Image */}
                     {/* Title */}
                     <div className="mt-4">
-                        <h2>The Blog Title Goes Here</h2>
+                        <h2 className='font-1'>The Blog Title Goes Here</h2>
                         <hr className="w-75 text-red" />
                     </div>
                     {/* Title */}
@@ -60,7 +60,7 @@ const SingleBlog = () => {
                     {/* Post */}
                     {/* Comments */}
                     <div>
-                        <h2>Comments (999)</h2>
+                        <h2 className='font-1'>Comments (999)</h2>
                         <hr className="w-75 text-red" />
                         {/* comments box */}
                         <div className="pc-singleBlog-comments">
@@ -111,7 +111,7 @@ const SingleBlog = () => {
                     {/* Comments */}
                     {/* Post Comment */}
                     <div className="w-auto mt-4">
-                        <h2>Post a Comment</h2>
+                        <h2 className='font-1'>Post a Comment</h2>
                         <hr className="w-75 text-red" />
                         <div className="container">
                             {/* Form */}

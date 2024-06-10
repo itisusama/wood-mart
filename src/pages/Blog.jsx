@@ -24,10 +24,10 @@ const Blog = () => {
                 <div className="card" data-aos="fade-up" data-aos-delay="1000">
                   <Link to='/single-blog'><img className="card-img-top img-fluid" src={Blog1} alt="Card image" style={{ width: '100%' }} /></Link>
                   <div className="card-body">
-                    <h5 className="card-title">Title Goes Here</h5>
+                    <h5 className="card-title font-1"><strong>Title Goes Here</strong></h5>
                     <div className="d-flex gap-2">
-                      <span className="d-block"><small><i className="fa-solid fa-eye text-red"></i> Reads</small></span>
-                      <span className="d-block"><small><i className="fa-solid fa-comment text-red"></i> Comments</small></span>
+                      <span className="d-block font-1"><small><i className="fa-solid fa-eye"></i><strong>Reads</strong></small></span>
+                      <span className="d-block font-1"><small><i className="fa-solid fa-comment text-red"></i><strong>Comments</strong></small></span>
                     </div>
                     <p className="card-text small">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis recusandae sint similique!...

@@ -23,7 +23,7 @@ const Right = () => {
       {/* Search */}
       {/* Categories */}
       <div className="mt-3 border py-2 px-4 pc-blog-category">
-        <h4 className="text-red">Categories</h4>
+        <h4 className="text-red font-1">Categories</h4>
         <ul className="list-unstyled">
           <li><Link to='/blog'>Category 1</Link></li>
           <li><Link to='/blog'>Category 2</Link></li>
@@ -34,7 +34,7 @@ const Right = () => {
       {/* Categories */}
       {/* Recent */}
       <div className="mt-3 border p-2 border">
-        <h4 className="text-red">Recent Posts</h4>
+        <h4 className="text-red font-1">Recent Posts</h4>
         {/* 1 */}
         <div className="row mb-3">
           <div className="col-4 d-flex justify-content-center align-items-center"><img src={'https://via.placeholder.com/70x70'} className="img-fluid" alt="post" /></div>
