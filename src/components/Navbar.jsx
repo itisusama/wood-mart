@@ -13,18 +13,19 @@ const Navbar = () => {
     };
     return (
         <>
-            <div className='container-fluid nav-container'>
+            <div>
+                <h3 className='logo text-center'>Wood Mart</h3>
+            </div>
+            <div className='container-fluid nav-container custom-select'>
                 <section className='py-1 p-2 bg-transparent'>
-                    <div>
-                        <h3 className='text-white logo'>Wood Mart</h3>
-                    </div>
+
 
                     <div className='desktop-navbar-item'>
                         <ul className='list-unstyled d-flex gap-2 align-items-center'>
                             <Link to="/" className='linkStyle'>Home</Link>
                             <li>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom custom-select' id="dropdown-basic">
                                         Living Room
                                     </Dropdown.Toggle>
 
@@ -44,7 +45,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Dropdown>
-                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom custom-select' id="dropdown-basic">
                                         Dining Room
                                     </Dropdown.Toggle>
 
@@ -56,9 +57,11 @@ const Navbar = () => {
                                     </Dropdown.Menu>
                                 </Dropdown>
                             </li>
+                            <Link to="/about" className='linkStyleLink ml-3'>Ottoman Beds</Link>
+
                             <li>
                                 <Dropdown>
-                                <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom custom-select' id="dropdown-basic">
                                         Bedroom
                                     </Dropdown.Toggle>
 
@@ -75,7 +78,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Dropdown>
-                                <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom' id="dropdown-basic">
+                                    <Dropdown.Toggle variant="none" className='text-white dropdown-toggle-custom custom-select' id="dropdown-basic">
                                         Accessories
                                     </Dropdown.Toggle>
 
@@ -88,7 +91,9 @@ const Navbar = () => {
 
                                 </Dropdown>
                             </li>
-                            
+                            <Link to="/about" className='linkStyleLink ml-3'>Special Offers</Link>
+
+
                             <Link to="/about" className='linkStyleLink ml-3'>Sofas</Link>
                             <Link to="/about" className='linkStyleLink ml-3'>Mattressses</Link>
                             <Link to="/about" className='linkStyleLink ml-3'>Dispaly Offers</Link>
@@ -132,7 +137,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Dropdown>
-                                <Dropdown.Toggle variant="none" id="dropdown-basic">
+                                    <Dropdown.Toggle variant="none" id="dropdown-basic">
                                         Dining Room
                                     </Dropdown.Toggle>
 
@@ -145,10 +150,12 @@ const Navbar = () => {
 
                                 </Dropdown>
                             </li>
-                            
+                            <Link to="/about" className='linkStylemobile ml-3'>Ottoman Beds</Link>
+
+
                             <li>
                                 <Dropdown>
-                                <Dropdown.Toggle variant="none"  id="dropdown-basic">
+                                    <Dropdown.Toggle variant="none" id="dropdown-basic">
                                         Bedroom
                                     </Dropdown.Toggle>
 
@@ -165,7 +172,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Dropdown>
-                                <Dropdown.Toggle variant="none"  id="dropdown-basic">
+                                    <Dropdown.Toggle variant="none" id="dropdown-basic">
                                         Accessories
                                     </Dropdown.Toggle>
 
@@ -178,6 +185,9 @@ const Navbar = () => {
 
                                 </Dropdown>
                             </li>
+
+                            <Link to="/about" className='linkStylemobile ml-3'>Special Offers</Link>
+  <br />
                             <Link to="/about" className='linkStylemobile'>Sofas</Link>
                             <br />
                             <Link to="/about" className='linkStylemobile'>Mattresses</Link>
@@ -185,7 +195,7 @@ const Navbar = () => {
                             <Link to="/about" className='linkStylemobile'>Display Offers</Link>
                             <br />
                             <Link to="/contact" className='linkStylemobile'>Contact</Link>
-                            
+
                         </ul>
                     </div>
                 </nav>

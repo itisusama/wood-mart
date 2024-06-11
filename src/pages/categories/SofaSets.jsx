@@ -37,30 +37,30 @@ const SofaSets = () => {
   return (
     <>
       <BreadCrumb pageName='All Products' />
-      <div className="container my-5 mt-2">
+      <div className="container my-5">
         <h1 className="mb-4">Sofa Sets</h1>
-        <div className="d-flex justify-content-between align-items-center mb-4">
-          <div>
-            <span className="mr-2">Filter:</span>
-            <select className="mr-2">
-              <option>Availability</option>
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
+          <div className="mb-3 mb-md-0">
+            <span className="custom-select mr-2">Filter: </span>
+            <select className="custom-select mr-2 mb-2 mb-md-0">
+              <option className="option">Availability</option>
             </select>
-            <select>
+            <select className="custom-select">
               <option>Price</option>
             </select>
           </div>
-          <div>
-            <span className="mr-2">Sort by:</span>
-            <select className="mr-2">
+          <div className="d-flex align-items-center">
+            <span className="custom-select mr-2">Sort by:</span>
+            <select className="custom-select mr-2 mb-2 mb-md-0">
               <option>Date, new to old</option>
             </select>
-            <span>10 products</span>
+            <span className='custom-select'>10 products</span>
           </div>
         </div>
         <div className="row">
           {sofaSets.map((sofa, index) => (
-            <div className="col-md-3 mb-4" key={index}>
-              <div className="card">
+            <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4" key={index}>
+              <div className="card h-100">
                 <img src={sofa.imageUrl} className="card-img-top" alt={sofa.name} />
                 <div className="card-body">
                   <h5 className="card-title">{sofa.name}</h5>
