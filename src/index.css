@@ -359,3 +359,8 @@ font-size: 16px;
     height: auto;
   }
 }
+
+.dropdown-menu .dropdown-item:active {
+  background-color: #ffeaa7 !important; /* Change the background color to red */
+  color: white !important; /* Ensure the text color contrasts well */
+}
