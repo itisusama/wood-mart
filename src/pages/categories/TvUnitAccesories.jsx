@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BreadCrumb from '../../components/BreadCrumb';
+import Sofa1 from '../../assets/images/dualone.jpg'
 
 const sofaSets = [
   {
     name: "Rosa Sofa Set",
     oldPrice: "£4,965.00 GBP",
     newPrice: "£2,495.00 GBP",
-    imageUrl: "https://placehold.co/300x200",
+    imageUrl: Sofa1 ,
     sale: true
   },
   {
@@ -33,12 +34,12 @@ const sofaSets = [
   }
 ];
 
-const SofaSets = () => {
+const TvUnitAccessories = () => {
   return (
     <>
-      <BreadCrumb pageName='Sofa Sets' />
+      <BreadCrumb pageName='TV Units' />
       <div className="container my-5">
-        <h1 className="mb-4 font-1">Sofa Sets</h1>
+        <h1 className="mb-4 font-1">TV Units</h1>
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
           <div className="mb-3 mb-md-0">
             <span className="custom-select mr-2">Filter: </span>
@@ -81,4 +82,4 @@ const SofaSets = () => {
   );
 };
 
-export default SofaSets;
+export default TvUnitAccessories;

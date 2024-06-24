@@ -39,16 +39,27 @@
   border: none;
 }
 
-p{
+p {
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
 }
-.logo {
-  color: white;
-  background-color: #e0b354;
+
+.logo{
+  color: #e0b354;
 }
+
+.logo-container {
+  text-align: center;
+}
+.logo-container img{
+  width: 180px;
+  aspect-ratio: 1;
+  margin-bottom: -50px;
+  margin-top: -30px;
+}
+
 /* START: Navbar */
 .nav-container {
   position: absolute !important;
@@ -57,21 +68,29 @@ p{
 
 .linkStyleLink {
   margin-right: 1.5rem;
-  color: white;
+  color: black;
   text-decoration: none;
   list-style: none;
 }
+
 .linkStyleLink:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
+}
+
+.linkStyle{
+  color: black !important;
 }
 
 .linkStyle:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
+  color: #e0b354;
 }
 
 .dropdown-toggle-custom:hover {
   text-decoration: underline;
+  color: #e0b354;
 }
+
 .linkStylemobile {
   margin-right: 1rem;
   color: #1a1a1a;
@@ -80,7 +99,7 @@ p{
 }
 
 .custom-select {
-  border: none; 
+  border: none;
   margin-right: 10px;
   font-family: "Assistant", sans-serif;
   font-size: 14px;
@@ -90,15 +109,20 @@ p{
   color: rgb(11, 57, 65);
 }
 
-
-
-
+.dropdown-menu .dropdown-item:active {
+  background-color: #ffeaa7 !important; 
+  color: white !important; 
+}
 
 .bg-transparent {
-  background-color: rgba(255, 0, 0, 0) !important;
+  background-color: white !important;
   color: var(--textColorWhite);
   display: flex;
   justify-content: space-evenly;
+}
+
+.nav-container{
+  background-color: white !important;
 }
 
 .bars {
@@ -114,6 +138,12 @@ p{
 .mobile-navbar {
   display: none;
 }
+
+@media(max-width: 429px){
+  .bars{
+    margin-top: 50px;
+  }
+} 
 
 @media (max-width: 610px) {
   .desktop-navbar-item {
@@ -146,11 +176,15 @@ p{
   }
 }
 
-.footer{
+.footer {
   background-color: #1a1a1a !important;
 }
 
-.footer h6, .footer p, .footer h5, .footer a, .footer li{
+.footer h6,
+.footer p,
+.footer h5,
+.footer a,
+.footer li {
   color: #d9d0c2 !important;
 }
 
@@ -192,12 +226,12 @@ p{
   color: #e0b354;
 }
 
-p{
+p {
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
   font-style: normal;
 }
-  
+
 
 /* START: Progress Bars */
 .experience-section {
@@ -302,11 +336,11 @@ p{
 
 /* Progress-bar */
 
-.experience-items p{
-font-size: 16px;
+.experience-items p {
+  font-size: 16px;
 }
 
-.progress-line{
+.progress-line {
   width: 100%;
   height: 5%;
 }
@@ -346,16 +380,41 @@ font-size: 16px;
 
 /* END: Newsletter */
 
-.home-carousel img{
+.home-carousel img {
   height: 90vh;
 }
 
-.card-img-top{
+.card-img-top {
   height: 45vh;
 }
 
-@media (max-width:576px){
-  .home-carousel img{
+@media (max-width:576px) {
+  .home-carousel img {
     height: auto;
   }
+}
+
+.logo-container img{
+  width: 180px;
+  aspect-ratio: 1;
+  margin-bottom: -42px;
+}
+
+/* .close-btn{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.mobile-navbar {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+} */
+
+.navbar-expand-lg{
+  width: 100%;
+  position: relative;
+  z-index: 99;
 }
